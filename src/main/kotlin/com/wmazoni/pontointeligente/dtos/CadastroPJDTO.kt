@@ -6,7 +6,7 @@ import org.hibernate.validator.constraints.br.CPF
 import javax.validation.constraints.Email
 import javax.validation.constraints.NotEmpty
 
-class CadastroPjDTO(
+class CadastroPJDTO(
     @get:NotEmpty(message = "Nome não pode ser vazio.")
     @get:Length(min = 3, max = 200, message = "Nome deve conter entre 3 e 200 caracteres.")
     val nome: String = "",
